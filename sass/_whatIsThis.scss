@@ -1,0 +1,119 @@
+
+@import "compass/css3";
+
+#whatIsThis{
+  margin-left: 245px;
+  position: absolute;
+  zoom: 1;
+  width: 484px;
+  z-index: 2;
+
+  a.whatIsThisButton
+{
+  background:url("../images/whatsThisArrow.png")no-repeat 5px 9px;
+  border-top: 0;
+  border: 1px solid #999;
+  border-bottom: 0;
+  display:block;
+  float: left;
+  font-size:11px;
+  font-weight:300;
+  padding: 0 15px;
+  text-decoration:none;
+  color:#fff;
+  position: relative;
+  z-index: 1;
+
+    &:hover{ 
+      background:#fff url("../images/whatsThisArrowHover.png")no-repeat 5px 10px;
+      color:#444;
+      text-decoration:none;
+      cursor: pointer;
+    }
+
+    
+}
+
+a.whatIsButtonActive{ 
+      background:#fff url("../images/whatsThisArrowHover.png")no-repeat 5px 10px;
+      color:#444;
+      text-decoration:none;
+      cursor: pointer;
+    }
+
+#whatIsPanel{
+  background:#fff;
+  box-shadow: 0px 10px 15px 0px #333;
+  border:1px solid #ccc;
+  border-top: 0;
+  color: #444;
+  display:none;
+  height: auto;
+  left:0;
+  margin:0;
+  padding:0 20px;
+  position:absolute;
+  top: 24px;
+  width:440px;
+  z-index: 5;
+
+  a.close{
+  background:#fff url("../images/WhatIsThis_Close.png")no-repeat 5px 6px;
+  color:#666 !important;
+  float: right;
+  font-size: 12px !important;
+  font-weight: bold;
+  padding: 5px 0 0 18px;
+  text-decoration:none;
+  cursor: pointer;
+  margin: 5px 0 15px 410px;
+
+    &:hover{
+      background:#fff url("../images/WhatIsThis_Close.png")no-repeat 5px 6px;
+      color:#666 !important;
+      float: right;
+      font-size: 12px !important;
+      font-weight: bold;
+      padding: 5px 0 0 18px;
+      text-decoration:none;
+      cursor: pointer;
+      margin: 5px 0 15px 410px;
+      }
+    }
+    
+    h4{
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0 10px;
+    }
+
+
+    p{
+    color: #444;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5em !important;
+    }
+
+    a {
+      background:#0e68c8;
+      border-radius: 3px;
+      border:0 !important;
+      color: #fff !important;
+      display:inline;  
+      font-size:12px; 
+      height: 12px;
+      line-height: 1;
+      color:#20204e;
+      padding:8px 15px;
+      text-decoration:none;
+
+      &:hover{
+        background:darken(#0e68c8,10%);
+        display:inline;  
+      }
+    }
+
+  }
+}

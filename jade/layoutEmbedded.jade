@@ -1,0 +1,29 @@
+include data
+!!! 5
+html(lang='en', dir='ltr')
+  head
+    meta(name='pageStart', content='1359057078694')
+    title #{site.name}
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name="viewport",content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1")
+    link#stylesheetGlobal(rel='stylesheet', type='text/css', href='http://media.ttgtmedia.com/rms/ux/css/global.css', media='screen')
+    link#stylesheetSiteSpecific(rel='stylesheet', type='text/css', href='http://media.ttgtmedia.com/rms/ux/css/searchfinancialapplications_new.css', media='screen')
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+    link(rel='stylesheet', href='css/style.css', type='text/css', media='screen')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script(type='text/javascript', src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f0c7ed813520536')
+    script(src='javascript/script.js')
+    // this needs to be here in order to avoid uncaught reference errors in console
+  body(id="#{site.name}")
+    #content
+      #contentCompress
+        //- // BEGIN: embedded microsite
+        //- #micrositeAdvertisement
+        //-   img(src="images/TT-Sponsored.png")
+        //-   #whatIsThis
+        //-     a.whatIsThisButton What is this?
+        //-     #whatIsPanel
+        //-       a.close Close
+        //-       p Sponsored Content is a special advertising section provided by IT vendors. It features educational content and interactive media aligned to the topics of this Web site.
+        //- // END: embedded microsite
+        block content
